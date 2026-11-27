@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Green Leaf Organic Market | Home</title> <!-- This is the title that shows on the browser tab-->
+  <meta name="description" content="Fresh organic fruit and vegetables from our family farm to your table."> <!-- This is a short summary shown by the search engine-->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet"> <!-- Links the one shared stylesheet so that every page looks the same-->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero"> <!-- the top section thats large and has the logo, menu, and main messages-->
+    <img class="hero-fruit hero-strawberry" src="images/orange.svg" alt="A whole orange with a green leaf">
+    <div class="site-header"> 
+      <a class="logo" href="index.html"><img src="images/logo.svg" alt="Green Leaf Organic Market logo with a basket and a leaf"></a> <!--The logo can also be used to link back to the home page-->
+      <nav class="main-nav" aria-label="Main navigation">  <!-- makes sure that the main menu is the same on every page-->
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li> <!-- this marks the current page the visitor is on-->
+          <li><a href="products.html">Products</a></li>
+          <li><a href="order.html">Order</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hero-content"> 
+      <h1>From our farm to your <span class="red">table</span>, fresh organic produce <span class="red">daily</span>.</h1> <!-- the main heading of the page, the red words are styled in CSS-->
+      <a class="btn" href="products.html">Shop Produce</a> <!-- red call-to-action button that links to the product page-->
+    </div>
+    <div class="hero-band"></div> <!-- the dark green strip at the bottom of the hero-->
+    <img class="hero-fruit hero-apple" src="images/mango.svg" alt="A ripe yellow and orange mango"> <!-- adds a decorative mango in the opposite corner-->
+  </header>
+
+  <main> <!-- the central content of the page-->
+    <section class="section split"> <!-- Intro section: two columns on a computer and one column on a mobile phone-->
+      <div>
+        <h2>A family-run market you can trust</h2>
+        <p>Green Leaf is run by Mariam Haddad and her family. We grow and sell organic fruit and vegetables, picked fresh and sold the same week.</p>
+        <p>Browse our <a href="products.html">products</a> and place your order in a minute on our <a href="order.html">order page</a>.</p> <!-- Text links to the other pages-->
+      </div>
+      <div>
+        <h2>Why shop with us</h2>
+        <ul class="checklist"> <!-- a list of reasons, the leaf bullets are drawn in CSS-->
+          <li>100% organic, grown without chemical sprays</li>
+          <li>Picked fresh from our own farm</li>
+          <li>Simple ordering, with no account needed</li>
+          <li>Local delivery or collection from the shop</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="band-green"> <!-- Green call-to-action section that encourages the customer to order-->
+      <div class="section split"> 
+        <img class="section-photo" src="images/market.svg" alt="A Green Leaf market stall with a red and white awning and crates of oranges, tomatoes, greens, mangoes and potatoes"> <!-- Adds the market stall picture with a descriptive alt text-->
+        <div>
+          <h2>Ready to order?</h2>
+          <p>Choose your fruit and vegetables, tell us how many you need, and we will get your box ready.</p>
+          <a class="btn" href="order.html">Place an order</a> <!-- second button that links to the order page-->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"> <!-- makes the footer repeat on every page-->
+    <p>Green Leaf Organic Market &ndash; family-run, locally grown.</p> <!-- opens the vistiors email app-->
+    <p>Email: <a href="mailto:hello@greenleafmarket.example">hello@greenleafmarket.example</a></p> <!-- &ndash; and &copy are codes for the - and copyright symbol -->
+    <p>&copy; 2026 Green Leaf Organic Market</p>
+  </footer>
+</body>
+</html>

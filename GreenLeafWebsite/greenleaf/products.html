@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Sets the character format -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Adjusts page size for different devices -->
+  <title>Green Leaf Organic Market | Products</title> <!-- Sets the browser tab title -->
+  <meta name="description" content="Organic fruit and vegetables available from Green Leaf Organic Market."> <!-- Describes the page -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Connects to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet"> <!-- Loads the website font -->
+  <link rel="stylesheet" href="style.css"> <!-- Connects the CSS stylesheet -->
+</head>
+<body>
+  <header class="page-banner"> <!-- Creates the top page banner -->
+    <div class="site-header"> <!-- Holds the logo and navigation -->
+      <a class="logo" href="index.html"><img src="images/logo.svg" alt="Green Leaf Organic Market logo with a basket and a leaf"></a> <!-- Logo links to Home -->
+      <nav class="main-nav" aria-label="Main navigation"> <!-- Creates the navigation menu -->
+        <ul>
+          <li><a href="index.html">Home</a></li> <!-- Links to Home -->
+          <li><a href="products.html" aria-current="page">Products</a></li> <!-- Marks the current page -->
+          <li><a href="order.html">Order</a></li> <!-- Links to Order -->
+        </ul>
+      </nav>
+    </div>
+    <h1>Our fresh produce</h1> <!-- Main page heading -->
+    <p>Everything is organic and picked fresh. Prices are per kilogram unless shown.</p> <!-- Short page introduction -->
+  </header>
+
+  <main> <!-- Contains the main page content -->
+    <section class="section">
+      <h2>This week's picks</h2> <!-- Introduces the available products -->
+      <ul class="product-grid"> <!-- Displays products in a grid -->
+        <li class="product"> <!-- Individual product card -->
+          <img src="images/mango.svg" alt="A ripe yellow and orange mango"> <!-- Displays mango image with alt text -->
+          <h3>Mangoes</h3> <!-- Product name -->
+          <p>Soft, sweet and full of flavour.</p> <!-- Product description -->
+          <p class="price">AED 20 / kg</p> <!-- Displays product price -->
+        </li>
+        <li class="product">
+          <img src="images/orange.svg" alt="A whole orange with a green leaf">
+          <h3>Oranges</h3>
+          <p>Juicy oranges, perfect for fresh juice.</p>
+          <p class="price">AED 9 / kg</p>
+        </li>
+        <li class="product">
+          <img src="images/melon.svg" alt="A whole round melon with a netted skin">
+          <h3>Melon</h3>
+          <p>Sweet, fragrant and perfect chilled.</p>
+          <p class="price">AED 7 / kg</p>
+        </li>
+        <li class="product">
+          <img src="images/grapes.svg" alt="A bunch of green grapes on the vine">
+          <h3>Grapes</h3>
+          <p>Seedless grapes, crisp and sweet.</p>
+          <p class="price">AED 16 / kg</p>
+        </li>
+        <li class="product">
+          <img src="images/watermelon.svg" alt="A slice of watermelon with red flesh and black seeds">
+          <h3>Watermelon</h3>
+          <p>Cool and refreshing for hot days.</p>
+          <p class="price">AED 4 / kg</p>
+        </li>
+        <li class="product">
+          <img src="images/blueberries.svg" alt="A pile of fresh blueberries">
+          <h3>Blueberries</h3>
+          <p>Small, sweet and packed with goodness.</p>
+          <p class="price">AED 28 / punnet</p>
+        </li>
+        <li class="product">
+          <img src="images/tomato.svg" alt="A round red tomato">
+          <h3>Tomatoes</h3>
+          <p>Full of flavour, ideal for salads.</p>
+          <p class="price">AED 8 / kg</p>
+        </li>
+        <li class="product">
+          <img src="images/potato.svg" alt="A brown potato with small eyes">
+          <h3>Potatoes</h3>
+          <p>Fluffy and versatile, great for roasting or mashing.</p>
+          <p class="price">AED 4 / kg</p>
+        </li>
+        <li class="product">
+          <img src="images/spinach.svg" alt="A bunch of green spinach leaves">
+          <h3>Spinach</h3>
+          <p>Tender leaves, washed and ready to cook.</p>
+          <p class="price">AED 10 / bunch</p>
+        </li>
+        <li class="product">
+          <img src="images/lettuce.svg" alt="A fresh green lettuce">
+          <h3>Lettuce</h3>
+          <p>Crisp and cool for fresh salads.</p>
+          <p class="price">AED 5 / each</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="band-light"> <!-- creates a seperate section thats lighty coloured-->
+      <div class="section">
+        <h2>Price list</h2> <!--intronduces -->
+        <div class="table-wrap">
+          <table>
+            <caption>Green Leaf price list and availability</caption>
+            <thead>
+              <tr><th scope="col">Product</th><th scope="col">Type</th><th scope="col">Price</th><th scope="col">Available</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Mangoes</td><td>Fruit</td><td>AED 20 / kg</td><td>Daily</td></tr>
+              <tr><td>Oranges</td><td>Fruit</td><td>AED 9 / kg</td><td>Daily</td></tr>
+              <tr><td>Melon</td><td>Fruit</td><td>AED 7 / kg</td><td>Daily</td></tr>
+              <tr><td>Grapes</td><td>Fruit</td><td>AED 16 / kg</td><td>Mon &ndash; Sat</td></tr>
+              <tr><td>Watermelon</td><td>Fruit</td><td>AED 4 / kg</td><td>Mon &ndash; Sat</td></tr>
+              <tr><td>Blueberries</td><td>Fruit</td><td>AED 28 / punnet</td><td>Mon &ndash; Sat</td></tr>
+              <tr><td>Tomatoes</td><td>Vegetable</td><td>AED 8 / kg</td><td>Daily</td></tr>
+              <tr><td>Potatoes</td><td>Vegetable</td><td>AED 4 / kg</td><td>Daily</td></tr>
+              <tr><td>Spinach</td><td>Vegetable</td><td>AED 10 / bunch</td><td>Mon &ndash; Sat</td></tr>
+              <tr><td>Lettuce</td><td>Vegetable</td><td>AED 5 / each</td><td>Mon &ndash; Sat</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top:1.5rem;"><a class="btn" href="order.html">Order now</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Green Leaf Organic Market &ndash; family-run, locally grown.</p>
+    <p>Email: <a href="mailto:hello@greenleafmarket.example">hello@greenleafmarket.example</a></p>
+    <p>&copy; 2026 Green Leaf Organic Market</p>
+  </footer>
+</body>
+</html>

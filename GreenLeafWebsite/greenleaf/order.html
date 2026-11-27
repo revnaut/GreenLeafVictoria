@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- this makes the website fit for different screen sizes-->
+  <title>Green Leaf Organic Market | Order</title>
+  <meta name="description" content="Send your order to Green Leaf Organic Market.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- connects external fonts and CSS stylesheet-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> <!-- links the external CSS file for page styling -->
+</head>
+<body>
+  <header class="page-banner"> <!-- website header and navigation menu-->
+    <div class="site-header">
+      <a class="logo" href="index.html"><img src="images/logo.svg" alt="Green Leaf Organic Market logo with a basket and a leaf"></a>
+      <nav class="main-nav" aria-label="Main navigation"> <!-- navigation menu for moving inbetween pages-->
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="order.html" aria-current="page">Order</a></li> <!-- marks order as the current page-->
+        </ul>
+      </nav>
+    </div>
+    <h1>Place your order</h1>
+    <p>Fill in the form and we will contact you to confirm your order.</p>
+  </header>
+
+  <main> <!-- main page heading and description-->
+    <section class="section">
+      <form id="order-form" class="order-form" action="#" method="post" novalidate> <!-- creats the form used to collect customer orders-->
+        <div class="field" id="field-name"> <!-- collects the customers full name-->
+          <label for="name">Full name</label> <!-- connects the label to the name input-->
+          <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error">
+          <p class="error-msg" id="name-error"></p> <!-- displays an error if the name is invalid -->
+        </div>
+
+        <div class="field" id="field-email"> <!-- collects the customers email address-->
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error"> <!-- uses email input to collect an email address-->
+          <p class="error-msg" id="email-error"></p> <!-- displays an error if the email is invalid-->
+        </div>
+
+        <div class="field" id="field-product"> <!-- allows customer to select a product-->
+          <label for="product">Product</label>
+          <select id="product" name="product" aria-describedby="product-error">
+            <option value="">Choose a product</option> <!-- default option shown before making a selection-->
+            <optgroup label="Fruit"> <!-- lists the available fruit products-->
+              <option>Mangoes</option>
+              <option>Oranges</option>
+              <option>Melon</option>
+              <option>Grapes</option>
+              <option>Watermelon</option>
+              <option>Blueberries</option>
+            </optgroup>
+            <optgroup label="Vegetables"> <!-- lists the available vegetable products-->
+              <option>Tomatoes</option>
+              <option>Potatoes</option>
+              <option>Spinach</option>
+              <option>Lettuce</option>
+            </optgroup>
+          </select> 
+          <p class="error-msg" id="product-error"></p> <!-- displays an error if no product is selected-->
+        </div>
+
+        <div class="field" id="field-quantity"> <!-- collects the number of items that the customer requests for-->
+          <label for="quantity">Quantity (1 to 50)</label> 
+          <input type="number" id="quantity" name="quantity" inputmode="numeric" aria-describedby="quantity-error"> <!-- allows customer enter a quantity numerically-->
+          <p class="error-msg" id="quantity-error"></p> <!-- shows an error if the quantity is invalid-->
+        </div>
+
+        <fieldset class="field radio-row"> <!-- allows customers to choose their collection method -->
+          <legend>How would you like to get your order?</legend>
+          <label><input type="radio" name="method" value="delivery" checked> Delivery</label> <!-- radio buttons allow only one delivery option-->
+          <label><input type="radio" name="method" value="collection"> Collect from shop</label>
+        </fieldset>
+
+        <div class="field"> <!-- provides an optional area for extra information-->
+          <label for="notes">Notes (optional)</label>
+          <textarea id="notes" name="notes" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send order</button> <!-- subtmis the completed order form-->
+        <div id="form-status" class="form-status" role="status" aria-live="polite"></div> <!-- shows validation errors or order status messages-->
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Green Leaf Organic Market &ndash; family-run, locally grown.</p>
+    <p>Email: <a href="mailto:hello@greenleafmarket.example">hello@greenleafmarket.example</a></p>
+    <p>&copy; 2026 Green Leaf Organic Market</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
